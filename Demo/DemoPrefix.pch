@@ -1,0 +1,24 @@
+//
+//  DemoPrefix.pch
+//  Demo
+//
+//  Created by weilihua on 2022/11/5.
+//
+
+#ifndef DemoPrefix_pch
+#define DemoPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Masonry/Masonry.h>
+#import <YYModel/YYModel.h>
+#import <SDWebImage/SDWebImage.h>
+#import <MJRefresh/MJRefresh.h>
+#import "QMBaseModel.h"
+#import "QMAsync.h"
+#import "QMUserDefaults.h"
+
+#define weakify(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
+#define strongify(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
+
+#endif /* DemoPrefix_pch */

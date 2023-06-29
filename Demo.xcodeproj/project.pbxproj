@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52923B008200FCBB988ED755 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57D88E0AD22E67585654EA0 /* Pods_Demo.framework */; };
+		B808F5F32A4BC50D00887019 /* SMPDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B808F5F22A4BC50D00887019 /* SMPDFViewController.m */; };
+		B808F5F62A4BC5C600887019 /* SMPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = B808F5F52A4BC5C600887019 /* SMPDFView.m */; };
+		B8251A9A29155115009CAB34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8251A9929155115009CAB34 /* AppDelegate.m */; };
+		B8251AA529155118009CAB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8251AA429155118009CAB34 /* Assets.xcassets */; };
+		B8251AA829155118009CAB34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8251AA629155118009CAB34 /* LaunchScreen.storyboard */; };
+		B8251AAB29155118009CAB34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8251AAA29155118009CAB34 /* main.m */; };
+		B8251ABB291552BD009CAB34 /* SMBaseKTVRoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8251ABA291552BD009CAB34 /* SMBaseKTVRoomController.m */; };
+		B8251AC1291552FD009CAB34 /* SMKTVGameRoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8251AC0291552FD009CAB34 /* SMKTVGameRoomController.m */; };
+		B8251AC529155321009CAB34 /* SMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8251AC429155321009CAB34 /* SMHomeViewController.m */; };
+		B8251AC829155416009CAB34 /* SMKTVChatRoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8251AC729155416009CAB34 /* SMKTVChatRoomController.m */; };
+		B8251AD429155906009CAB34 /* SMBaseKTVRoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8251AD329155906009CAB34 /* SMBaseKTVRoomView.m */; };
+		B8251AD729155929009CAB34 /* SMKTVChatRoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8251AD629155929009CAB34 /* SMKTVChatRoomView.m */; };
+		B8251ADA2915593B009CAB34 /* SMKTVGameRoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8251AD92915593B009CAB34 /* SMKTVGameRoomView.m */; };
+		B82DD4132A4D1B5200E8761E /* SMPDFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B82DD4122A4D1B5200E8761E /* SMPDFManager.m */; };
+		B82DD4282A4D260700E8761E /* NSString+Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B82DD4262A4D260700E8761E /* NSString+Crypto.m */; };
+		B82DD4352A4D266600E8761E /* QMUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = B82DD4332A4D266600E8761E /* QMUserDefaults.m */; };
+		B82DD4402A4D288C00E8761E /* SMDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B82DD43C2A4D288C00E8761E /* SMDownloadTask.m */; };
+		B82DD4412A4D288C00E8761E /* QMAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = B82DD43F2A4D288C00E8761E /* QMAsync.m */; };
+		B880FC362A4927FB002C3843 /* SMOCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B880FC352A4927FB002C3843 /* SMOCRViewController.m */; };
+		B89348772915F37300C24DAF /* SMKTVManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B89348762915F37300C24DAF /* SMKTVManager.m */; };
+		B893487B2915F45700C24DAF /* SMGatewayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B893487A2915F45700C24DAF /* SMGatewayManager.m */; };
+		B89348812915F4D400C24DAF /* SMSeatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B89348802915F4D400C24DAF /* SMSeatManager.m */; };
+		B89348882915F51F00C24DAF /* SMUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B89348872915F51F00C24DAF /* SMUserManager.m */; };
+		B893488B2915F55900C24DAF /* SMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B893488A2915F55900C24DAF /* SMUser.m */; };
+		B893488E2915F57000C24DAF /* SMSeat.m in Sources */ = {isa = PBXBuildFile; fileRef = B893488D2915F57000C24DAF /* SMSeat.m */; };
+		B89348912915F58F00C24DAF /* SMMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B89348902915F58F00C24DAF /* SMMessage.m */; };
+		B89348942915F69700C24DAF /* SMRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = B89348932915F69700C24DAF /* SMRoom.m */; };
+		B89348992915FDD800C24DAF /* QMBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B89348982915FDD800C24DAF /* QMBaseModel.m */; };
+		B89348A2291617F600C24DAF /* SMMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B89348A1291617F600C24DAF /* SMMessageView.m */; };
+		B89348A62916195400C24DAF /* SMMessageViewBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B89348A52916195400C24DAF /* SMMessageViewBaseCell.m */; };
+		B89348A92916199400C24DAF /* SMMessageViewNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B89348A82916199400C24DAF /* SMMessageViewNormalCell.m */; };
+		B89348AC291619AA00C24DAF /* SMMessageViewSystemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B89348AB291619AA00C24DAF /* SMMessageViewSystemCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FFD4BFFEA4836E4A0E27EE3 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		6A2B5EB7DD4F8D7AC8C31E3C /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		B808F5F12A4BC50D00887019 /* SMPDFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMPDFViewController.h; sourceTree = "<group>"; };
+		B808F5F22A4BC50D00887019 /* SMPDFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMPDFViewController.m; sourceTree = "<group>"; };
+		B808F5F42A4BC5C600887019 /* SMPDFView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMPDFView.h; sourceTree = "<group>"; };
+		B808F5F52A4BC5C600887019 /* SMPDFView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMPDFView.m; sourceTree = "<group>"; };
+		B8251A9529155115009CAB34 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8251A9829155115009CAB34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B8251A9929155115009CAB34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B8251AA429155118009CAB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8251AA729155118009CAB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8251AA929155118009CAB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8251AAA29155118009CAB34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B8251AB9291552BD009CAB34 /* SMBaseKTVRoomController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMBaseKTVRoomController.h; sourceTree = "<group>"; };
+		B8251ABA291552BD009CAB34 /* SMBaseKTVRoomController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMBaseKTVRoomController.m; sourceTree = "<group>"; };
+		B8251ABF291552FD009CAB34 /* SMKTVGameRoomController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMKTVGameRoomController.h; sourceTree = "<group>"; };
+		B8251AC0291552FD009CAB34 /* SMKTVGameRoomController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMKTVGameRoomController.m; sourceTree = "<group>"; };
+		B8251AC329155321009CAB34 /* SMHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMHomeViewController.h; sourceTree = "<group>"; };
+		B8251AC429155321009CAB34 /* SMHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMHomeViewController.m; sourceTree = "<group>"; };
+		B8251AC629155416009CAB34 /* SMKTVChatRoomController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMKTVChatRoomController.h; sourceTree = "<group>"; };
+		B8251AC729155416009CAB34 /* SMKTVChatRoomController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMKTVChatRoomController.m; sourceTree = "<group>"; };
+		B8251AD229155906009CAB34 /* SMBaseKTVRoomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMBaseKTVRoomView.h; sourceTree = "<group>"; };
+		B8251AD329155906009CAB34 /* SMBaseKTVRoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMBaseKTVRoomView.m; sourceTree = "<group>"; };
+		B8251AD529155929009CAB34 /* SMKTVChatRoomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMKTVChatRoomView.h; sourceTree = "<group>"; };
+		B8251AD629155929009CAB34 /* SMKTVChatRoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMKTVChatRoomView.m; sourceTree = "<group>"; };
+		B8251AD82915593B009CAB34 /* SMKTVGameRoomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMKTVGameRoomView.h; sourceTree = "<group>"; };
+		B8251AD92915593B009CAB34 /* SMKTVGameRoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMKTVGameRoomView.m; sourceTree = "<group>"; };
+		B82DD4112A4D1B5200E8761E /* SMPDFManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMPDFManager.h; sourceTree = "<group>"; };
+		B82DD4122A4D1B5200E8761E /* SMPDFManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMPDFManager.m; sourceTree = "<group>"; };
+		B82DD4262A4D260700E8761E /* NSString+Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Crypto.m"; sourceTree = "<group>"; };
+		B82DD4272A4D260700E8761E /* NSString+Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Crypto.h"; sourceTree = "<group>"; };
+		B82DD4332A4D266600E8761E /* QMUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUserDefaults.m; sourceTree = "<group>"; };
+		B82DD4342A4D266600E8761E /* QMUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUserDefaults.h; sourceTree = "<group>"; };
+		B82DD43B2A4D288C00E8761E /* SMDownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMDownloadTask.h; sourceTree = "<group>"; };
+		B82DD43C2A4D288C00E8761E /* SMDownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMDownloadTask.m; sourceTree = "<group>"; };
+		B82DD43E2A4D288C00E8761E /* QMAsync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMAsync.h; sourceTree = "<group>"; };
+		B82DD43F2A4D288C00E8761E /* QMAsync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMAsync.m; sourceTree = "<group>"; };
+		B880FC342A4927FB002C3843 /* SMOCRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMOCRViewController.h; sourceTree = "<group>"; };
+		B880FC352A4927FB002C3843 /* SMOCRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMOCRViewController.m; sourceTree = "<group>"; };
+		B89348752915F37300C24DAF /* SMKTVManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMKTVManager.h; sourceTree = "<group>"; };
+		B89348762915F37300C24DAF /* SMKTVManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMKTVManager.m; sourceTree = "<group>"; };
+		B89348792915F45700C24DAF /* SMGatewayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMGatewayManager.h; sourceTree = "<group>"; };
+		B893487A2915F45700C24DAF /* SMGatewayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMGatewayManager.m; sourceTree = "<group>"; };
+		B893487F2915F4D400C24DAF /* SMSeatManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSeatManager.h; sourceTree = "<group>"; };
+		B89348802915F4D400C24DAF /* SMSeatManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSeatManager.m; sourceTree = "<group>"; };
+		B89348862915F51F00C24DAF /* SMUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMUserManager.h; sourceTree = "<group>"; };
+		B89348872915F51F00C24DAF /* SMUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMUserManager.m; sourceTree = "<group>"; };
+		B89348892915F55900C24DAF /* SMUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMUser.h; sourceTree = "<group>"; };
+		B893488A2915F55900C24DAF /* SMUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMUser.m; sourceTree = "<group>"; };
+		B893488C2915F57000C24DAF /* SMSeat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSeat.h; sourceTree = "<group>"; };
+		B893488D2915F57000C24DAF /* SMSeat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSeat.m; sourceTree = "<group>"; };
+		B893488F2915F58F00C24DAF /* SMMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMMessage.h; sourceTree = "<group>"; };
+		B89348902915F58F00C24DAF /* SMMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMessage.m; sourceTree = "<group>"; };
+		B89348922915F69700C24DAF /* SMRoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMRoom.h; sourceTree = "<group>"; };
+		B89348932915F69700C24DAF /* SMRoom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMRoom.m; sourceTree = "<group>"; };
+		B89348972915FDD800C24DAF /* QMBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMBaseModel.h; sourceTree = "<group>"; };
+		B89348982915FDD800C24DAF /* QMBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMBaseModel.m; sourceTree = "<group>"; };
+		B893489C2915FF0200C24DAF /* DemoPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoPrefix.pch; sourceTree = "<group>"; };
+		B89348A0291617F600C24DAF /* SMMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMMessageView.h; sourceTree = "<group>"; };
+		B89348A1291617F600C24DAF /* SMMessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMessageView.m; sourceTree = "<group>"; };
+		B89348A42916195400C24DAF /* SMMessageViewBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMMessageViewBaseCell.h; sourceTree = "<group>"; };
+		B89348A52916195400C24DAF /* SMMessageViewBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMessageViewBaseCell.m; sourceTree = "<group>"; };
+		B89348A72916199400C24DAF /* SMMessageViewNormalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMMessageViewNormalCell.h; sourceTree = "<group>"; };
+		B89348A82916199400C24DAF /* SMMessageViewNormalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMessageViewNormalCell.m; sourceTree = "<group>"; };
+		B89348AA291619AA00C24DAF /* SMMessageViewSystemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMMessageViewSystemCell.h; sourceTree = "<group>"; };
+		B89348AB291619AA00C24DAF /* SMMessageViewSystemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMMessageViewSystemCell.m; sourceTree = "<group>"; };
+		D57D88E0AD22E67585654EA0 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8251A9229155115009CAB34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52923B008200FCBB988ED755 /* Pods_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7463FBE20C89D47A88ED8250 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FFD4BFFEA4836E4A0E27EE3 /* Pods-Demo.debug.xcconfig */,
+				6A2B5EB7DD4F8D7AC8C31E3C /* Pods-Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B808F5EC2A4BC4B900887019 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				B808F5EF2A4BC4EC00887019 /* Model */,
+				B808F5F02A4BC4F500887019 /* Manager */,
+				B808F5EE2A4BC4DE00887019 /* View */,
+				B808F5ED2A4BC4D200887019 /* Controller */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		B808F5ED2A4BC4D200887019 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B808F5F12A4BC50D00887019 /* SMPDFViewController.h */,
+				B808F5F22A4BC50D00887019 /* SMPDFViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B808F5EE2A4BC4DE00887019 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B808F5F42A4BC5C600887019 /* SMPDFView.h */,
+				B808F5F52A4BC5C600887019 /* SMPDFView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B808F5EF2A4BC4EC00887019 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B808F5F02A4BC4F500887019 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B82DD4112A4D1B5200E8761E /* SMPDFManager.h */,
+				B82DD4122A4D1B5200E8761E /* SMPDFManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B8251A8C29155115009CAB34 = {
+			isa = PBXGroup;
+			children = (
+				B8251A9729155115009CAB34 /* Demo */,
+				B8251A9629155115009CAB34 /* Products */,
+				7463FBE20C89D47A88ED8250 /* Pods */,
+				E37BD98BD3B8641A82548FBE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B8251A9629155115009CAB34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8251A9529155115009CAB34 /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8251A9729155115009CAB34 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B8251AB129155237009CAB34 /* Feature */,
+				B8251AB22915523C009CAB34 /* Modules */,
+				B8251AB329155253009CAB34 /* Libraries */,
+				B8251A9829155115009CAB34 /* AppDelegate.h */,
+				B8251A9929155115009CAB34 /* AppDelegate.m */,
+				B8251AA429155118009CAB34 /* Assets.xcassets */,
+				B8251AA629155118009CAB34 /* LaunchScreen.storyboard */,
+				B8251AA929155118009CAB34 /* Info.plist */,
+				B8251AAA29155118009CAB34 /* main.m */,
+				B893489C2915FF0200C24DAF /* DemoPrefix.pch */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		B8251AB129155237009CAB34 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				B808F5EC2A4BC4B900887019 /* PDF */,
+				B8251AC22915530F009CAB34 /* Home */,
+				B8251AB429155263009CAB34 /* KTV */,
+				B880FC332A4927BD002C3843 /* OCR */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		B8251AB22915523C009CAB34 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B82DD4292A4D262400E8761E /* Tools */,
+				B89348732915F33B00C24DAF /* KTV */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B8251AB329155253009CAB34 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B82DD43A2A4D288C00E8761E /* Download */,
+				B82DD43D2A4D288C00E8761E /* QMAsync */,
+				B82DD4252A4D260700E8761E /* Category */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		B8251AB429155263009CAB34 /* KTV */ = {
+			isa = PBXGroup;
+			children = (
+				B8251AC92915588A009CAB34 /* Base */,
+				B8251ACB291558A7009CAB34 /* Game */,
+				B8251ACA29155894009CAB34 /* Chat */,
+			);
+			path = KTV;
+			sourceTree = "<group>";
+		};
+		B8251AB529155269009CAB34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8251AB9291552BD009CAB34 /* SMBaseKTVRoomController.h */,
+				B8251ABA291552BD009CAB34 /* SMBaseKTVRoomController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B8251AB629155271009CAB34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8251AD229155906009CAB34 /* SMBaseKTVRoomView.h */,
+				B8251AD329155906009CAB34 /* SMBaseKTVRoomView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8251AB729155277009CAB34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B89348922915F69700C24DAF /* SMRoom.h */,
+				B89348932915F69700C24DAF /* SMRoom.m */,
+				B89348892915F55900C24DAF /* SMUser.h */,
+				B893488A2915F55900C24DAF /* SMUser.m */,
+				B893488C2915F57000C24DAF /* SMSeat.h */,
+				B893488D2915F57000C24DAF /* SMSeat.m */,
+				B893488F2915F58F00C24DAF /* SMMessage.h */,
+				B89348902915F58F00C24DAF /* SMMessage.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8251AB82915527D009CAB34 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B89348752915F37300C24DAF /* SMKTVManager.h */,
+				B89348762915F37300C24DAF /* SMKTVManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B8251AC22915530F009CAB34 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B89348962915FDB500C24DAF /* Model */,
+				B89348952915FDAF00C24DAF /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B8251AC92915588A009CAB34 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B8251AB729155277009CAB34 /* Model */,
+				B8251AB82915527D009CAB34 /* Manager */,
+				B8251AB629155271009CAB34 /* View */,
+				B8251AB529155269009CAB34 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B8251ACA29155894009CAB34 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				B8251AD1291558ED009CAB34 /* Model */,
+				B8251AD0291558E5009CAB34 /* View */,
+				B8251ACD291558CC009CAB34 /* Controller */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		B8251ACB291558A7009CAB34 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				B8251ACF291558DE009CAB34 /* Model */,
+				B8251ACE291558D9009CAB34 /* View */,
+				B8251ACC291558C0009CAB34 /* Controller */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		B8251ACC291558C0009CAB34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8251ABF291552FD009CAB34 /* SMKTVGameRoomController.h */,
+				B8251AC0291552FD009CAB34 /* SMKTVGameRoomController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B8251ACD291558CC009CAB34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8251AC629155416009CAB34 /* SMKTVChatRoomController.h */,
+				B8251AC729155416009CAB34 /* SMKTVChatRoomController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B8251ACE291558D9009CAB34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8251AD82915593B009CAB34 /* SMKTVGameRoomView.h */,
+				B8251AD92915593B009CAB34 /* SMKTVGameRoomView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8251ACF291558DE009CAB34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8251AD0291558E5009CAB34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8251AD529155929009CAB34 /* SMKTVChatRoomView.h */,
+				B8251AD629155929009CAB34 /* SMKTVChatRoomView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8251AD1291558ED009CAB34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B82DD4252A4D260700E8761E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B82DD4262A4D260700E8761E /* NSString+Crypto.m */,
+				B82DD4272A4D260700E8761E /* NSString+Crypto.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B82DD4292A4D262400E8761E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B82DD4322A4D266600E8761E /* UserDefault */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B82DD4322A4D266600E8761E /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				B82DD4332A4D266600E8761E /* QMUserDefaults.m */,
+				B82DD4342A4D266600E8761E /* QMUserDefaults.h */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		B82DD43A2A4D288C00E8761E /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				B82DD43B2A4D288C00E8761E /* SMDownloadTask.h */,
+				B82DD43C2A4D288C00E8761E /* SMDownloadTask.m */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		B82DD43D2A4D288C00E8761E /* QMAsync */ = {
+			isa = PBXGroup;
+			children = (
+				B82DD43E2A4D288C00E8761E /* QMAsync.h */,
+				B82DD43F2A4D288C00E8761E /* QMAsync.m */,
+			);
+			path = QMAsync;
+			sourceTree = "<group>";
+		};
+		B880FC332A4927BD002C3843 /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				B880FC342A4927FB002C3843 /* SMOCRViewController.h */,
+				B880FC352A4927FB002C3843 /* SMOCRViewController.m */,
+			);
+			path = OCR;
+			sourceTree = "<group>";
+		};
+		B89348732915F33B00C24DAF /* KTV */ = {
+			isa = PBXGroup;
+			children = (
+				B893489F2915FFF200C24DAF /* User */,
+				B893489E2915FFEC00C24DAF /* Message */,
+				B893489D2915FFE400C24DAF /* Seat */,
+				B89348782915F3AE00C24DAF /* Service */,
+			);
+			path = KTV;
+			sourceTree = "<group>";
+		};
+		B89348782915F3AE00C24DAF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B89348792915F45700C24DAF /* SMGatewayManager.h */,
+				B893487A2915F45700C24DAF /* SMGatewayManager.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B89348952915FDAF00C24DAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8251AC329155321009CAB34 /* SMHomeViewController.h */,
+				B8251AC429155321009CAB34 /* SMHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B89348962915FDB500C24DAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B89348972915FDD800C24DAF /* QMBaseModel.h */,
+				B89348982915FDD800C24DAF /* QMBaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B893489D2915FFE400C24DAF /* Seat */ = {
+			isa = PBXGroup;
+			children = (
+				B893487F2915F4D400C24DAF /* SMSeatManager.h */,
+				B89348802915F4D400C24DAF /* SMSeatManager.m */,
+			);
+			path = Seat;
+			sourceTree = "<group>";
+		};
+		B893489E2915FFEC00C24DAF /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				B89348A32916190600C24DAF /* Cell */,
+				B89348A0291617F600C24DAF /* SMMessageView.h */,
+				B89348A1291617F600C24DAF /* SMMessageView.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		B893489F2915FFF200C24DAF /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B89348862915F51F00C24DAF /* SMUserManager.h */,
+				B89348872915F51F00C24DAF /* SMUserManager.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		B89348A32916190600C24DAF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B89348A42916195400C24DAF /* SMMessageViewBaseCell.h */,
+				B89348A52916195400C24DAF /* SMMessageViewBaseCell.m */,
+				B89348A72916199400C24DAF /* SMMessageViewNormalCell.h */,
+				B89348A82916199400C24DAF /* SMMessageViewNormalCell.m */,
+				B89348AA291619AA00C24DAF /* SMMessageViewSystemCell.h */,
+				B89348AB291619AA00C24DAF /* SMMessageViewSystemCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E37BD98BD3B8641A82548FBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D57D88E0AD22E67585654EA0 /* Pods_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8251A9429155115009CAB34 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8251AAE29155118009CAB34 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				BB14BE9170CE29749E5D3F57 /* [CP] Check Pods Manifest.lock */,
+				B8251A9129155115009CAB34 /* Sources */,
+				B8251A9229155115009CAB34 /* Frameworks */,
+				B8251A9329155115009CAB34 /* Resources */,
+				9B28A650E8E1A31C32228BB9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = B8251A9529155115009CAB34 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8251A8D29155115009CAB34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					B8251A9429155115009CAB34 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = B8251A9029155115009CAB34 /* Build configuration list for PBXProject "Demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8251A8C29155115009CAB34;
+			productRefGroup = B8251A9629155115009CAB34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8251A9429155115009CAB34 /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8251A9329155115009CAB34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8251AA829155118009CAB34 /* LaunchScreen.storyboard in Resources */,
+				B8251AA529155118009CAB34 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B28A650E8E1A31C32228BB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB14BE9170CE29749E5D3F57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8251A9129155115009CAB34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B893488E2915F57000C24DAF /* SMSeat.m in Sources */,
+				B89348AC291619AA00C24DAF /* SMMessageViewSystemCell.m in Sources */,
+				B8251A9A29155115009CAB34 /* AppDelegate.m in Sources */,
+				B808F5F62A4BC5C600887019 /* SMPDFView.m in Sources */,
+				B89348772915F37300C24DAF /* SMKTVManager.m in Sources */,
+				B89348882915F51F00C24DAF /* SMUserManager.m in Sources */,
+				B8251AD429155906009CAB34 /* SMBaseKTVRoomView.m in Sources */,
+				B893488B2915F55900C24DAF /* SMUser.m in Sources */,
+				B8251AC1291552FD009CAB34 /* SMKTVGameRoomController.m in Sources */,
+				B8251AD729155929009CAB34 /* SMKTVChatRoomView.m in Sources */,
+				B8251AAB29155118009CAB34 /* main.m in Sources */,
+				B82DD4402A4D288C00E8761E /* SMDownloadTask.m in Sources */,
+				B89348992915FDD800C24DAF /* QMBaseModel.m in Sources */,
+				B89348912915F58F00C24DAF /* SMMessage.m in Sources */,
+				B893487B2915F45700C24DAF /* SMGatewayManager.m in Sources */,
+				B89348A62916195400C24DAF /* SMMessageViewBaseCell.m in Sources */,
+				B8251ABB291552BD009CAB34 /* SMBaseKTVRoomController.m in Sources */,
+				B89348A92916199400C24DAF /* SMMessageViewNormalCell.m in Sources */,
+				B89348A2291617F600C24DAF /* SMMessageView.m in Sources */,
+				B808F5F32A4BC50D00887019 /* SMPDFViewController.m in Sources */,
+				B82DD4282A4D260700E8761E /* NSString+Crypto.m in Sources */,
+				B82DD4132A4D1B5200E8761E /* SMPDFManager.m in Sources */,
+				B880FC362A4927FB002C3843 /* SMOCRViewController.m in Sources */,
+				B8251AC829155416009CAB34 /* SMKTVChatRoomController.m in Sources */,
+				B8251ADA2915593B009CAB34 /* SMKTVGameRoomView.m in Sources */,
+				B82DD4352A4D266600E8761E /* QMUserDefaults.m in Sources */,
+				B82DD4412A4D288C00E8761E /* QMAsync.m in Sources */,
+				B89348812915F4D400C24DAF /* SMSeatManager.m in Sources */,
+				B89348942915F69700C24DAF /* SMRoom.m in Sources */,
+				B8251AC529155321009CAB34 /* SMHomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B8251AA629155118009CAB34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8251AA729155118009CAB34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8251AAC29155118009CAB34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B8251AAD29155118009CAB34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8251AAF29155118009CAB34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FFD4BFFEA4836E4A0E27EE3 /* Pods-Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KFSKA2NQKM;
+				GCC_PREFIX_HEADER = Demo/DemoPrefix.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Grant Demo access to the camera for video recordings.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starmakerapp.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B8251AB029155118009CAB34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A2B5EB7DD4F8D7AC8C31E3C /* Pods-Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KFSKA2NQKM;
+				GCC_PREFIX_HEADER = Demo/DemoPrefix.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Grant Demo access to the camera for video recordings.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starmakerapp.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8251A9029155115009CAB34 /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8251AAC29155118009CAB34 /* Debug */,
+				B8251AAD29155118009CAB34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8251AAE29155118009CAB34 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8251AAF29155118009CAB34 /* Debug */,
+				B8251AB029155118009CAB34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8251A8D29155115009CAB34 /* Project object */;
+}
