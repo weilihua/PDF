@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "SMHomeViewController.h"
+#import <MMKV/MMKV.h>
 
 @interface AppDelegate ()
 
@@ -23,8 +24,15 @@
     self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];
     
+    //MMKV
+    [self initMMKV];
+    
     return YES;
 }
 
+- (void)initMMKV {
+    // init MMKV in the main thread
+    [MMKV initializeMMKV:nil];
+}
 
 @end

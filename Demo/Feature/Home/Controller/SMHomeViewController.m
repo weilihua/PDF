@@ -8,7 +8,7 @@
 #import "SMHomeViewController.h"
 #import "SMKTVChatRoomController.h"
 #import "SMOCRViewController.h"
-#import "SMPDFViewController.h"
+#import "SMPDFHomeController.h"
 
 @interface SMHomeViewController ()
 
@@ -59,7 +59,7 @@
 }
 
 - (void)btnPDFEvent:(UIButton *)sender {
-    SMPDFViewController *vc = [SMPDFViewController new];
+    SMPDFHomeController *vc = [SMPDFHomeController new];
     self.navigationController.navigationBarHidden = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }

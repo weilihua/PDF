@@ -1,0 +1,33 @@
+{
+  "url": "https://book.pep.com.cn",
+  "path": "mobile",
+  "thumb": "thumb",
+  "grades": [
+      {
+          "name": "一年级",
+          "books": [
+              {
+                  "name": "语文·一年级上册",
+                  "key": "1211001101161",
+                  "type": 0,
+                  "pages": 128,
+                  "timestamp": "220926111206"
+              },
+              {
+                  "name": "数学·一年级上册",
+                  "key": "1221001101121",
+                  "type": 1,
+                  "pages": 120,
+                  "timestamp": "221008154618"
+              },
+              {
+                  "name": "英语·一年级上册",
+                  "key": "1212001101123",
+                  "type": 1,
+                  "pages": 78,
+                  "timestamp": "220927164059"
+              }
+          ]
+      }
+  ]
+}
